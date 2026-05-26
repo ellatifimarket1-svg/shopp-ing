@@ -23,15 +23,15 @@
 
     <section class="relative h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
         
-        <div class="absolute inset-0 z-0">
-            <video autoplay loop muted playsinline class="w-full h-full object-cover">
-                <source src="https://player.vimeo.com/external/435674703.sd.mp4?s=7fdf17e296f83060edbc9f1b9815779e5fa090b8&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
-            </video>
-            <div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <iframe src="https://player.vimeo.com/video/689033333?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&background=1" 
+                    class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 aspect-video object-cover"
+                    frameborder="0" allow="autoplay; fullscreen" muted loop></iframe>
+            <div class="absolute inset-0 bg-black/65 backdrop-blur-[1px]"></div>
         </div>
 
         <div class="relative z-10 flex flex-col justify-center items-center">
-            <div class="mb-6 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-white/20 shadow-2xl">
+            <div class="mb-6 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-white/20 shadow-2xl bg-black">
                 <img src="https://i.postimg.cc/QCH4vNgD/Whats-App-Image-2026-05-26-at-14-09-28.jpg" alt="Bazar Salonat" class="w-full h-full object-cover">
             </div>
 
@@ -41,7 +41,7 @@
             </p>
             
             <div class="w-64 space-y-3 mt-8">
-                <a href="#prodotti" class="block w-full bg-white text-black font-semibold py-3.5 text-xs tracking-widest uppercase rounded-xl shadow-xl transition hover:bg-zinc-200">
+                <a href="#prodotti" class="block w-full bg-white text-black font-semibold py-3.5 text-xs tracking-widest uppercase rounded-xl shadow-xl transition hover:scale-[1.02] duration-200">
                     Scopri il Catalogo &rarr;
                 </a>
                 <a href="https://wa.me/393516452318?text=Ciao!%20Vorrei%20informazioni%20sui%20vostri%20salotti" target="_blank" class="block w-full border border-white/20 text-white font-semibold py-3.5 text-xs tracking-widest uppercase rounded-xl bg-white/10 backdrop-blur-md transition hover:bg-white/20">
