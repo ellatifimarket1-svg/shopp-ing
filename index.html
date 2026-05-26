@@ -1,62 +1,92 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOP ING - Streetwear</title>
+    <title>Bazar Salonat — Arredo e profumi per la tua casa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
-        .hero-gradient { background: linear-gradient(180deg, #111 0%, #000 100%); }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; color: #000; margin: 0; }
+        .hero-bg {
+            position: relative;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url('https://i.postimg.cc/QCH4vNgD/Whats-App-Image-2026-05-26-at-14-09-28.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 <body>
 
-    <nav class="p-6 flex justify-between items-center border-b border-gray-800">
-        <h1 class="text-2xl font-black tracking-tighter uppercase">shopping</h1>
-        <div class="bg-white text-black px-4 py-1 rounded-full text-sm font-bold animate-pulse">
-            NUOVA COLLEZIONE
+    <nav class="p-4 flex justify-between items-center bg-black text-white sticky top-0 z-50">
+        <div class="text-xl font-light tracking-wide italic">Bazar <span class="text-zinc-400">Salonat</span></div>
+        <div class="flex items-center gap-4">
+            <span class="bg-white text-black font-bold text-xs px-4 py-2 rounded tracking-wider uppercase">Catalogo</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
         </div>
     </nav>
 
-    <header class="hero-gradient py-20 px-6 text-center">
-        <h2 class="text-6xl font-black mb-4 tracking-tight text-white">LACOSTE STYLE.</h2>
-        <p class="text-gray-400 text-lg mb-8">Stile urban, comfort assoluto. Disponibili ora.</p>
-    </header>
-
-    <section class="p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
-            <div class="aspect-square bg-zinc-800 flex items-center justify-center">
-               <img src="https://i.postimg.cc/QdcPBRmT/Whats-App-Image-2026-04-28-at-16-56-18.jpg" alt="Tuta" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6">
-                <h3 class="text-xl font-bold">Tuta Street Black - "Essence"</h3>
-                <p class="text-2xl font-black mt-2 text-white">€59,90</p>
-               <a href="https://wa.me/393516452318?text=Ciao!%20Vorrei%20ordinare" class="mt-4 block text-center bg-green-500 text-black font-bold py-3 rounded-lg">
-    Ordina su WhatsApp
-                </a>
-            </div>
+    <section class="hero-bg min-h-[85vh] flex flex-col justify-center items-center text-center px-6 py-12 text-white">
+        
+        <div class="mb-6 max-w-[180px]">
+            <img src="https://i.postimg.cc/QCH4vNgD/Whats-App-Image-2026-05-26-at-14-09-28.jpg" alt="Bazar Salonat" class="w-full h-auto rounded-full border-2 border-amber-500/30">
         </div>
 
-        <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
-            <div class="aspect-square bg-zinc-800 flex items-center justify-center">
-                <span class="text-zinc-500">[FOTO TUTA 2]</span>
+        <p class="text-lg text-zinc-200 max-w-md mx-auto mb-2 font-medium">Arredo, profumi e oggetti per la tua casa.</p>
+        <p class="text-lg text-zinc-200 max-w-md mx-auto mb-10 font-medium">Spediti in tutta Italia.</p>
+        
+        <div class="w-full max-w-xs space-y-4 mb-10">
+            <a href="https://wa.me/393516452318?text=Ciao!%20Vorrei%20vedere%20il%20catalogo" class="block w-full bg-white text-black font-bold py-4 text-xs tracking-widest uppercase rounded">Acquista Ora &rarr;</a>
+            <a href="https://wa.me/393516452318?text=Ciao!%20Vorrei%20informazioni" class="block w-full border border-white text-white font-bold py-4 text-xs tracking-widest uppercase rounded bg-black/20 backdrop-blur-sm">Scrivici su WhatsApp</a>
+        </div>
+        
+        <div class="text-center space-y-2 text-xs uppercase tracking-wider text-zinc-300">
+            <div>★★★★★ 4.9/5 • 500+ Clienti</div>
+            <div class="font-bold text-amber-400 mt-1">Pagamento alla consegna</div>
+        </div>
+    </section>
+
+    <div class="bg-black text-zinc-400 grid grid-cols-2 text-center text-[10px] py-6 gap-y-4 font-semibold uppercase tracking-wider border-t border-zinc-900">
+        <div><span class="text-white block mb-0.5">Spedizione Italia</span> Consegna rapida</div>
+        <div><span class="text-white block mb-0.5">Pagamento alla Consegna</span> Zero rischi</div>
+    </div>
+
+    <section class="p-4 grid grid-cols-2 gap-3 bg-white">
+        <div class="relative rounded-lg overflow-hidden h-24 bg-zinc-800">
+            <div class="absolute inset-0 flex items-center p-3 bg-black/40"><span class="text-white font-bold text-sm">Set da Cucina &rarr;</span></div>
+        </div>
+        <div class="relative rounded-lg overflow-hidden h-24 bg-zinc-800">
+            <div class="absolute inset-0 flex items-center p-3 bg-black/40"><span class="text-white font-bold text-sm">Elettrodomestici &rarr;</span></div>
+        </div>
+    </section>
+
+    <section class="p-6 bg-white">
+        <div class="mb-6">
+            <span class="text-xs font-bold tracking-widest text-zinc-400 uppercase block mb-1">Più Venduti</span>
+            <h2 class="text-3xl font-light tracking-tight text-zinc-900">I preferiti dai clienti.</h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-4 gap-y-8">
+            <div class="flex flex-col">
+                <div class="aspect-square w-full rounded-xl overflow-hidden bg-zinc-100 mb-3 flex items-center justify-center text-zinc-400 text-xs">FOTO PROFUMO</div>
+                <h3 class="font-semibold text-zinc-900 text-sm leading-tight">Marmara EDP 100ml</h3>
+                <p class="text-zinc-500 text-xs mt-1">€ 29.00</p>
+                <a href="https://wa.me/393516452318?text=Ciao!%20Vorrei%20ordinare%20il%20profumo%20Marmara%20EDP" class="mt-2 bg-green-500 text-white font-bold text-center py-2 rounded text-xs uppercase tracking-wider">Ordina</a>
             </div>
-            <div class="p-6">
-                <h3 class="text-xl font-bold">Tuta Oversize Grey</h3>
-                <p class="text-2xl font-black mt-2 text-white">€64,90</p>
-                <a href="https://wa.me/393516452318?text=Ciao!%20Vorrei%20ordinare%20la%20Tuta%20Street%20Black" class="mt-4 block text-center bg-green-500 text-black font-bold py-3 rounded-lg">
-    Ordina su WhatsApp
-</a>
-                    Ordina su WhatsApp
-                </a>
+
+            <div class="flex flex-col">
+                <div class="aspect-square w-full rounded-xl overflow-hidden bg-zinc-100 mb-3 flex items-center justify-center text-zinc-400 text-xs">FOTO SALOTTO</div>
+                <h3 class="font-semibold text-zinc-900 text-sm leading-tight">Salotto Tortora Oro</h3>
+                <p class="text-zinc-600 font-medium text-xs mt-1">Su richiesta</p>
+                <a href="https://wa.me/393516452318?text=Ciao!%20Vorrei%20informazioni%20sul%20Salotto%20Tortora" class="mt-2 bg-green-500 text-white font-bold text-center py-2 rounded text-xs uppercase tracking-wider">Richiedi</a>
             </div>
         </div>
     </section>
 
-    <footer class="p-10 text-center text-zinc-600 text-sm">
-        © 2024 SHOP ING - Streetwear Culture
+    <footer class="bg-black text-zinc-600 text-center text-xs py-8 border-t border-zinc-900">
+        <p>&copy; 2026 Bazar Salonat. Spedizioni in tutta Italia.</p>
     </footer>
 
 </body>
